@@ -13,6 +13,14 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-text {
+    font-size: 3em; /* Larger font size for logo-like text */
+    font-weight: bold; /* Bold text */
+    color: #FFD700; /* Gold color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+
     line-height: 1.6;
     background-color: #f4f4f4; /* Light background color */
 }
