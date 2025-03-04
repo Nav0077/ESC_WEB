@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the logo */
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out navigation items */
+    align-items: center; /* Center items vertically */
+    background-color: #4CAF50; /* Background color for the navbar */
+    padding: 10px 0; /* Padding for the navbar */
+}
+
+
 .sponsor img {
     width: 100px; /* Adjust size as needed */
     margin-right: 10px; /* Space between image and text */
