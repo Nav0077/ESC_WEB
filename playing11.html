@@ -5,32 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Playing XI - ELITE SOCIAL CLUB</title>
+    <!-- Include React and ReactDOM -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
 </head>
 <body>
     <header>
-        <img src="path/to/logo.png" alt="Logo" class="logo" />
         <h1>Playing XI</h1>
         <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <nav id="slidebar" class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="playing11.html">Playing XI</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <h2>Our Playing XI</h2>
-        <p>Meet our team for the upcoming matches!</p>
+        <div id="root"></div> <!-- React component will be rendered here -->
     </main>
     <footer>
         <p>&copy; 2023 ELITE SOCIAL CLUB</p>
     </footer>
     <script src="js/script.js"></script>
+    <script type="text/babel">
+        // Mock player data
+        const players = [
+            {
+                id: 1,
+                name: 'Player One',
+                photoUrl: 'path/to/player1.jpg',
+                role: 'Batsman',
+                battingStyle: 'Right-hand bat',
+                bowlingStyle: 'Right-arm medium',
+                stats: {
+                    matches: 50,
+                    runs: 1500,
+                    average: 30,
+                    highestScore: 100,
+                    wickets: 20,
+                    bowlingAverage: 25,
+                    catches: 15,
+                    stumpings: 5
+                },
+                bio: 'An experienced batsman with a knack for scoring runs.'
+            },
+            {
+                id: 2,
+                name: 'Player Two',
+                photoUrl: 'path/to/player2.jpg',
+                role: 'Bowler',
+                battingStyle: 'Left-hand bat',
+                bowlingStyle: 'Left-arm fast',
+                stats: {
+                    matches: 40,
+                    runs: 800,
+                    average: 20,
+                    highestScore: 75,
+                    wickets: 30,
+                    bowlingAverage: 22,
+                    catches: 10,
+                    stumpings: 2
+                },
+                bio: 'A fast bowler known for his pace and accuracy.'
+            }
+            // Add more players as needed
+        ];
+
+        const PlayingXI = () => (
+            <div>
+                {players.map(player => (
+                    <div className="player-card" key={player.id}>
+                        <img src={player.photoUrl} alt={player.name} />
+                        <div className="player-name">{player.name}</div>
+                        <div className="player-stats">
+                            <p>Role: {player.role}</p>
+                            <p>Matches: {player.stats.matches}</p>
+                            <p>Runs: {player.stats.runs}</p>
+                            <p>Average: {player.stats.average}</p>
+                            <p>Highest Score: {player.stats.highestScore}</p>
+                            <p>Wickets: {player.stats.wickets}</p>
+                        </div>
+                        <p>{player.bio}</p>
+                    </div>
+                ))}
+            </div>
+        );
+
+        // Render the PlayingXI component
+        ReactDOM.render(<PlayingXI />, document.getElementById('root'));
+    </script>
 </body>
 </html>
