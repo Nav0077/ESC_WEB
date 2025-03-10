@@ -1,0 +1,18 @@
+### Comprehensive Plan for Enhancing the Player Profile Page
+
+#### Information Gathered:
+- The `profile.html` file contains sections for player information, statistics, matches, videos, and news.
+- The "Stats" tab is a suitable location to add additional player statistics.
+- The current structure allows for dynamic updates, which can be utilized to show individual player profiles.
+
+#### Plan:
+1. **Update `profile.html`**:
+   - Add additional player statistics in the "Stats" tab. This may include metrics such as runs scored, wickets taken, and other relevant performance indicators.
+   - Ensure that the "View Profile" functionality is implemented to display only the selected player's profile when clicked.
+
+#### Dependent Files to be Edited:
+- `profile.html` will be the primary file edited for these changes.
+
+#### Follow-up Steps:
+- Verify the changes in the `profile.html` file.
+- Test the functionality to ensure that the profile displays correctly when a player is selected.
