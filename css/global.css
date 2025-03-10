@@ -20,6 +20,9 @@ Licence: <a href="https://www.templateonweb.com/license">Website Template Licenc
    --orange:#ff4d02;
    --border_orange :#ffb09e;
    --border_orange_light :#ffe4dd;
+   --contact-bg: #f0f8ff; /* Added background color for contact section */
+   --contact-text-color: #333; /* Added text color for contact section */
+
 }
 
 body{
@@ -768,4 +771,3 @@ min-width: 30rem !important;
 	 font-size:13px;
 	 }
 }
-
