@@ -1,0 +1,20 @@
+To create a comprehensive plan for addressing the issue of styles not working in the `Sujan_profile.html` file, follow these steps:
+
+### 1. **Verify CSS Links**: 
+   - Ensure that the paths to the linked CSS files (`bootstrap.min.css`, `global.css`, `profile.css`, and `styles.css`) in the `Sujan_profile.html` file are correct and accessible.
+
+### 2. **Check CSS Files**:
+   - Confirm that all the linked CSS files are present in the `css` directory and contain the expected styles.
+   - Review the contents of `global.css` and `profile.css` to identify any styles that may be conflicting or not applying as intended.
+
+### 3. **Inspect for Conflicts**:
+   - Look for any potential CSS conflicts or overrides that may prevent styles from being applied correctly. This includes checking for specificity issues or styles marked with `!important`.
+
+### 4. **Test Changes**:
+   - After making any necessary adjustments, refresh the `Sujan_profile.html` page to see if the styles are now applied correctly.
+
+### 5. **Document Findings**:
+   - Document any changes made and the results of the testing to ensure clarity for future reference.
+
+### Follow-up Steps:
+- If the styles are still not working after these checks, further investigation may be needed, including checking for JavaScript that may be manipulating styles or layout.
