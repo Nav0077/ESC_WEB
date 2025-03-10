@@ -25,60 +25,36 @@ header {
     font-weight: bold; /* Bold text */
 }
 
-.navbar {
-    background-color: #007BFF; /* Set navbar background color */
-    border-radius: 5px; /* Rounded corners for the navbar */
-}
-
 .navbar ul {
     list-style: none; /* Remove bullet points */
     display: flex; /* Flexbox for horizontal layout */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center items in the navbar */
 }
 
 .navbar ul li {
     margin: 0 15px; /* Space between items */
 }
 
-.navbar .nav-link {
-    color: white; /* Set navbar link color */
-    outline: none; /* Remove default outline */
-    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effect */
-
-    padding: 10px 15px; /* Increased padding for better spacing */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+.navbar ul li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Padding around links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.navbar .nav-link:focus,
-.navbar .nav-link:hover {
-    background-color: #0056b3; /* Darker background on hover and focus */
-    color: #fff; /* Ensure text remains white on hover and focus */
-    border: 2px solid #fff; /* Add border on focus */
-
-    color: #fff; /* Ensure text remains white on hover */
+.navbar ul li a:hover {
+    background-color: #333; /* Dark background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
 }
 
 main {
     padding: 20px; /* Padding for main content */
-    background-color: var(--contact-bg); /* Added background color for contact section */
-    color: var(--contact-text-color); /* Added text color for contact section */
 }
-
 
 .player-container {
     display: flex; /* Flexbox for player cards */
     flex-wrap: wrap; /* Wrap cards to next line */
     gap: 20px; /* Space between cards */
 }
-
-/* Styles specific to the contact section */
-.contact-section {
-    padding: 30px; /* Padding for contact section */
-    border-radius: 10px; /* Rounded corners for contact section */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for contact section */
-}
-
 
 .player-card {
     background: white; /* White background for player cards */
@@ -103,21 +79,34 @@ footer {
     text-align: center; /* Center text */
     background: #444; /* Slightly lighter dark background */
     color: white; /* White text */
-    padding: 15px 0; /* Adjusted padding for footer */
+    padding: 10px 0; /* Padding for footer */
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .player-card {
-        width: calc(50% - 20px); /* Adjust width for two cards per row on smaller screens */
-    }
+form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+}
 
-    .navbar ul {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center; /* Center items */
-    }
-    
-    .navbar ul li {
-        margin: 10px 0; /* Adjust margin for vertical layout */
-    }
+form label {
+    margin: 10px 0 5px; /* Margin for labels */
+}
+
+form input, form textarea {
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+form button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+form button:hover {
+    background-color: #333; /* Dark background on hover */
 }
