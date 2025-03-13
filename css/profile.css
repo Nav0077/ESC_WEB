@@ -12,9 +12,10 @@ tbody, td, tfoot, th, thead, tr{
     border:none!important; 
      }
     .contact_2_left span{
-    width:100px; /* Updated width for better layout */
-    height:100px; /* Updated height for better layout */
-    line-height:100px; /* Updated line height for better alignment */
+    width:80px; /* Reverted width to previous value */
+    height:80px; /* Reverted height to previous value */
+    line-height:80px; /* Reverted line height to previous value */
+
 
      }
     /*********************profile_end****************/
@@ -23,8 +24,9 @@ tbody, td, tfoot, th, thead, tr{
     @media screen and (max-width : 767px){
     
     .contact_2_left {
-    margin-top:20px; /* Increased margin for better spacing */
-    margin-bottom:20px; /* Increased margin for better spacing */
+    margin-top:10px; /* Reverted margin for better spacing */
+    margin-bottom:10px; /* Reverted margin for better spacing */
+
 
      }
     .contact_3_left {
@@ -57,7 +59,8 @@ tbody, td, tfoot, th, thead, tr{
     margin-bottom:5px;
     }
     .profile4_inner  img{
-    width:200px; 
+    width:150px; /* Reverted image width to previous value */
+
      }
      }
     

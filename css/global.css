@@ -1,27 +1,33 @@
 /* Existing CSS content... */
 
-/* New styles for gallery */
+/* Previous styles for gallery */
 .gallery-container {
-    max-width: 1200px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add some padding */
+    max-width: 100%; /* Reverted maximum width to previous value */
+    margin: 0; /* Reverted margin to previous value */
+    padding: 0; /* Reverted padding to previous value */
 }
 
+
+/* Previous styles for gallery images */
 .gallery-images {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow images to wrap */
-    justify-content: center; /* Center images */
+    display: block; /* Reverted display to previous value */
+    /* Removed flexbox layout */
 }
 
+
+/* Previous styles for gallery items */
 .gallery-item {
-    max-width: 200px; /* Set a maximum width for images */
-    margin: 10px; /* Add margin around images */
-    border-radius: 8px; /* Optional: add rounded corners */
-    transition: transform 0.3s; /* Add a transition for hover effect */
+    max-width: 150px; /* Reverted maximum width to previous value */
+    margin: 5px; /* Reverted margin to previous value */
+    border-radius: 0; /* Removed rounded corners */
+    /* Removed transition effect */
 }
 
+
+/* Previous hover effect for gallery items */
 .gallery-item:hover {
-    transform: scale(1.05); /* Slightly enlarge image on hover */
+    /* Removed hover effect */
 }
+
 
 /* Existing CSS content... */
