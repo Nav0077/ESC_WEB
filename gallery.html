@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <title>Gallery - Cricket Club</title>
     <link href="fonts/css/solid.min.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/css/fontawesome.min.css" rel="stylesheet" >
-	<link href="fonts/css/brands.min.css" rel="stylesheet" />
+    <link href="fonts/css/brands.min.css" rel="stylesheet" />
     <link href="css/profile.css" rel="stylesheet">    
-    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,13 +27,13 @@
                         <a class="nav-link" href="Players.html">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallary</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="playing11.html">Playin XI</a>
+                        <a class="nav-link" href="playing11.html">Playing XI</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -45,51 +43,91 @@
         </div>
     </nav>
 
-
     <main>
-
         <section id="gallery">
-          
-            <div class="gallery-images">
-                <img src="assets/img/gallary/ing1.jpg" alt="Image 1" class="gallery-item">
-                <img src="assets/img/gallary/ing2.jpg" alt="Image 2" class="gallery-item">
-                <img src="assets/img/gallary/ing3.jpg" alt="Image 3" class="gallery-item">
-                <img src="assets/img/gallary/ing4.jpg" alt="Image 4" class="gallery-item">
-                <img src="assets/img/gallary/ing5.jpg" alt="Image 5" class="gallery-item">
-                <img src="assets/img/gallary/ing6.jpg" alt="Image 6" class="gallery-item">
-                <img src="assets/img/gallary/ing7.jpg" alt="Image 7" class="gallery-item">
-                <img src="assets/img/gallary/ing8.jpg" alt="Image 8" class="gallery-item">
-                <img src="assets/img/gallary/ing9.jpg" alt="Image 9" class="gallery-item">
-                <!-- Add more images as needed -->
+            <div class="gallery-container">
+                <div class="gallery-images">
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing1.jpg" alt="Image 1" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>Match moment betw Elite and Raja Team</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing2.jpg" alt="Image 2" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>MAtch in Raptisonari Frist Cup</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing3.jpg" alt="Image 3" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>Wining the match</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing4.jpg" alt="Image 4" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>Elite Wining</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing5.jpg" alt="Image 5" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>Elite warrior</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing6.jpg" alt="Image 6" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>Wining</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing7.jpg" alt="Image 7" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>The Real Elite</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing8.jpg" alt="Image 8" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>Winns</p>
+                    </div>
+                    <div class="gallery-item-container">
+                        <img src="img/gallary/ing9.jpg" alt="Image 9" class="gallery-item" onclick="openFullscreen(this);">
+                        <p>Real Players</p>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
 
+    <script>
+        function openFullscreen(img) {
+            if (img.requestFullscreen) {
+                img.requestFullscreen();
+            } else if (img.mozRequestFullScreen) { // Firefox
+                img.mozRequestFullScreen();
+            } else if (img.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                img.webkitRequestFullscreen();
+            } else if (img.msRequestFullscreen) { // IE/Edge
+                img.msRequestFullscreen();
+            }
+        }
+    </script>
+
     <footer>
         <section id="footer_bottom" class="pt-3 pb-3 bg-dark">
             <div class="container-xl">
-             <div class="row footer_bottom_1">
-               <div class="col-md-8">
-                 <div class="footer_bottom_1_left">
-                   <p class="mb-0 text-white-50 font_14">© 2024 ELITE SOCIAL CLUB. All Rights Reserved | Design by AnyX Pvt Ltd</a></p>
-                 </div>
-               </div>
-               <div class="col-md-4">
-                 <div class="footer_bottom_1_right text-end">
-                  <ul class="mb-0 d-flex font_13 flex-wrap">
-                   <li><a class="text-white-50 link" href="#">Terms of Use</a></li>
-                   <li class="mx-2 text-white-50 my-auto">|</li>
-                    <li><a class="text-white-50 link" href="#">Privacy Policy</a></li>
-                   <li class="mx-2 text-white-50 my-auto">|</li>
-                    <li><a class="text-white-50 link" href="#">About Us</a></li>
-                   <li class="mx-2 text-white-50 my-auto">|</li>
-                    <li><a class="text-white-50 link" href="#">Contact Us</a></li>
-                  </ul>
-                 </div>
-               </div>
-             </div>  
+                <div class="row footer_bottom_1">
+                    <div class="col-md-8">
+                        <div class="footer_bottom_1_left">
+                            <p class="mb-0 text-white-50 font_14">© 2024 ELITE SOCIAL CLUB. All Rights Reserved | Design by AnyX Pvt Ltd</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_bottom_1_right text-end">
+                            <ul class="mb-0 d-flex font_13 flex-wrap">
+                                <li><a class="text-white-50 link" href="#">Terms of Use</a></li>
+                                <li class="mx-2 text-white-50 my-auto">|</li>
+                                <li><a class="text-white-50 link" href="#">Privacy Policy</a></li>
+                                <li class="mx-2 text-white-50 my-auto">|</li>
+                                <li><a class="text-white-50 link" href="#">About Us</a></li>
+                                <li class="mx-2 text-white-50 my-auto">|</li>
+                                <li><a class="text-white-50 link" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
             </div>
-           </section>
+        </section>
     </footer>
 </body>
 </html>
