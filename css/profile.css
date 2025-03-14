@@ -8,63 +8,66 @@ Licence: <a href="https://www.templateonweb.com/license">Website Template Licenc
 
 /*********************profile****************/
 
-tbody, td, tfoot, th, thead, tr {
-    border: none !important; 
-}
-
-.contact_2_left span {
-    width: 80px; /* Reverted width to previous value */
-    height: 80px; /* Reverted height to previous value */
-    line-height: 80px; /* Reverted line height to previous value */
-}
-
-/*********************profile_end****************/
-
-@media screen and (max-width: 767px) {
+tbody, td, tfoot, th, thead, tr{
+    border:none!important; 
+     }
+    .contact_2_left span{
+    width:70px;
+    height:70px;
+    line-height:70px; 
+     }
+    /*********************profile_end****************/
+    
+    
+    @media screen and (max-width : 767px){
+    
     .contact_2_left {
-        margin-top: 10px; /* Reverted margin for better spacing */
-        margin-bottom: 10px; /* Reverted margin for better spacing */
-    }
+    margn-top:10px;
+    margin-bottom:10px; 
+     }
     .contact_3_left {
-        margin-bottom: 25px; /* Increased margin for better spacing */
-    }
-    .profile3_inner1 {
-        margin-top: 8px;
-        margin-bottom: 8px; 
-    }
+    margin-bottom:15px; 
+     }
+    .profile3_inner1{
+    margin-top:8px;
+    margin-bottom:8px; 
+     }
     .schedule2_left1_left3 {
-        bottom: 0 !important;
+        bottom: 0!important;
     }
-    .profile4_inner img {
-        width: 100px; 
-    }
-    .team_dt1l img {
-        width: 100%;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    /* Add styles for this breakpoint if needed */
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
+    .profile4_inner  img{
+    width:100px; 
+     }
+    .team_dt1l img{
+    width:100%;
+     }
+     }
+    
+    
+    @media (min-width:576px) and (max-width:767px) {
+    
+     }
+     
+    @media (min-width:768px) and (max-width:991px) {
     .social_link {
-        margin-top: 5px;
-        margin-bottom: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
     }
-    .profile4_inner img {
-        width: 150px; /* Reverted image width to previous value */
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    /* Add styles for this breakpoint if needed */
-}
-
-@media (min-width: 1201px) and (max-width: 1300px) {
-    /* Add styles for this breakpoint if needed */
-}
-
-@media (min-width: 1400px) and (max-width: 2000px) {
-    /* Add styles for this breakpoint if needed */
-}
+    .profile4_inner  img{
+    width:200px; 
+     }
+     }
+    
+    @media (min-width:992px) and (max-width:1200px) {
+    
+     }
+    
+    @media (min-width:1201px) and (max-width:1300px) {
+    
+     }
+    @media (min-width:1400px) and (max-width:2000px) {
+    
+     }
+    
+    
+    
