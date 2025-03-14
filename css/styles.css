@@ -1,112 +1,27 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Custom styles for hover effects and responsiveness */
+
+.nav-link {
+    transition: color 0.3s ease;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    background-color: #f4f4f4; /* Light background for the body */
+.nav-link:hover {
+    color: #007bff; /* Change to desired hover color */
 }
 
-header {
-    background: linear-gradient(to right, #4CAF50, #333); /* Gradient background */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding for header */
-    display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Space between logo and nav */
-    align-items: center; /* Center items vertically */
+button {
+    transition: background-color 0.3s ease;
 }
 
-.logo {
-    font-size: 24px; /* Logo font size */
-    font-weight: bold; /* Bold text */
+button:hover {
+    background-color: #0056b3; /* Change to desired hover color */
 }
 
-.navbar ul {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Flexbox for horizontal layout */
-}
-
-.navbar ul li {
-    margin: 0 15px; /* Space between items */
-}
-
-.navbar ul li a {
-    color: white; /* White text color */
-    text-decoration: none; /* Remove underline */
-    padding: 5px 10px; /* Padding around links */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.navbar ul li a:hover {
-    background-color: #333; /* Dark background on hover */
-    border-radius: 5px; /* Rounded corners on hover */
-}
-
-main {
-    padding: 20px; /* Padding for main content */
-}
-
-.player-container {
-    display: flex; /* Flexbox for player cards */
-    flex-wrap: wrap; /* Wrap cards to next line */
-    gap: 20px; /* Space between cards */
-}
-
-.player-card {
-    background: white; /* White background for player cards */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 15px; /* Padding inside the card */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-    width: calc(33.333% - 20px); /* Responsive width for three cards per row */
-}
-
-.player-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-}
-
-.player-card img {
-    width: 100%; /* Full width for images */
-    border-radius: 10px; /* Rounded corners for images */
-}
-
-footer {
-    text-align: center; /* Center text */
-    background: #444; /* Slightly lighter dark background */
-    color: white; /* White text */
-    padding: 10px 0; /* Padding for footer */
-}
-
-form {
-    display: flex; /* Flexbox for form layout */
-    flex-direction: column; /* Stack form elements vertically */
-}
-
-form label {
-    margin: 10px 0 5px; /* Margin for labels */
-}
-
-form input, form textarea {
-    padding: 10px; /* Padding for inputs */
-    margin-bottom: 10px; /* Space below inputs */
-    border: 1px solid #ccc; /* Border for inputs */
-    border-radius: 5px; /* Rounded corners */
-}
-
-form button {
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border: none; /* No border */
-    padding: 10px; /* Padding for button */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-form button:hover {
-    background-color: #333; /* Dark background on hover */
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .container {
+        padding: 0 15px;
+    }
 }
