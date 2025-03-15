@@ -5,16 +5,18 @@
 }
 
 .nav-link:hover {
-    color: #007bff; /* Change to desired hover color */
+    color: var(--blue); /* Change to desired hover color */
 }
+
 
 button {
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3; /* Change to desired hover color */
+    background-color: var(--blue_dark); /* Change to desired hover color */
 }
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
