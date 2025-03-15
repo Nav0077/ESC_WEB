@@ -50,3 +50,85 @@ tbody, td, tfoot, th, thead, tr {
         width: 200px; 
     }
 }
+
+/* Add your existing CSS here */
+
+/* Footer styles */
+#footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #000;
+    border-top: 1px solid #444;
+}
+
+#footer .container-xl {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#footer .footer_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer .footer_1 .col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1rem;
+}
+
+#footer .footer_1 .col ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer .footer_1 .col ul li {
+    margin-bottom: 1rem;
+}
+
+#footer .footer_1 .col ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+#footer .footer_1 .col ul li a:hover {
+    color: #fff;
+}
+
+#footer_bottom {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #222;
+}
+
+#footer_bottom .footer_bottom_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_bottom .footer_bottom_1_left p {
+    margin: 0;
+    color: #aaa;
+}
+
+#footer_bottom .footer_bottom_1_right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer_bottom .footer_bottom_1_right ul li {
+    margin: 0 0.5rem;
+}
+
+#footer_bottom .footer_bottom_1_right ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+#footer_bottom .footer_bottom_1_right ul li a:hover {
+    color: #fff;
+}
