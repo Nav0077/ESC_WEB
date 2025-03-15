@@ -1,0 +1,27 @@
+/* Gallery Styles */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.gallery-item-container {
+    margin: 10px;
+    text-align: center;
+}
+
+.gallery-item {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 20px;
+}
