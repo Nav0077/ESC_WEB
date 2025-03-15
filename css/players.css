@@ -1,0 +1,49 @@
+/* Styles for Players.html */
+
+/* Player Card Layout */
+.player-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Player Card Styles */
+.player-card {
+    border: 1px solid var(--border_light);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styles */
+.player-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--blue_dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .player-container {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+}

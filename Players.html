@@ -9,7 +9,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/css/fontawesome.min.css" rel="stylesheet" >
 	<link href="fonts/css/brands.min.css" rel="stylesheet" />
-    <link href="css/profile.css" rel="stylesheet">    
+    <link href="css/profile.css" rel="stylesheet">
+    <link href="css/players.css" rel="stylesheet">    
+
     <title>Players - Cricket Club</title>
 </head>
 <body>
@@ -47,11 +49,13 @@
     <main>
         <section id="players">
             <h1>Our Players</h1>
-            <div class="player-container">
+            <div class="player-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px;">
+
                 <div class="player-card">
                     <img src="img/sujan.jpg" alt="Player 1">
                     <h2>Sujan Karki</h2>
-                    <a href="Sujan_profile.html" class="btn">View Profile</a>
+                    <a href="Sujan_profile.html" class="btn" style="display: inline-block; padding: 10px 20px; background-color: var(--blue); color: white; border-radius: 5px; text-align: center; text-decoration: none; transition: background-color 0.3s;">View Profile</a>
+
                 </div>
                 <div class="player-card">
                     <img src="img/yubb.jpg" alt="Player 2">
